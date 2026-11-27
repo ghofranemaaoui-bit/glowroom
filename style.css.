@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+    --pink: #e8bdc8;
+    --light-pink: #fff1f3;
+    --cream: #fffaf4;
+    --beige: #e9ddcf;
+    --brown: #59443e;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--brown);
+    font-family: 'DM Sans', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 65px 20px 45px;
+    background: var(--light-pink);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    color: #bd8194;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    background: var(--white);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--brown);
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #bd8194;
+}
+
+main {
+    max-width: 1000px;
+    margin: 55px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+main > p {
+    margin-bottom: 40px;
+    color: #927b73;
+}
+
+section {
+    background: var(--white);
+    padding: 35px 20px;
+    margin: 20px 0;
+    border-radius: 18px;
+    border: 1px solid var(--beige);
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-4px);
+}
+
+section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #bd8194;
+}
+
+section p {
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: var(--light-pink);
+    font-size: 13px;
+}
