@@ -142,3 +142,30 @@ section {
   border: 1px solid var(--soft-beige);
   border-radius: 18px;
 }
+.back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #e5cfd6;
+  border-radius: 50%;
+  background-color: #f8dce8;
+  color: #927266;
+  font-size: 20px;
+  box-shadow: 0 6px 16px rgba(146, 114, 102, 0.16);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 50;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top:active {
+  transform: scale(0.95);
+}
