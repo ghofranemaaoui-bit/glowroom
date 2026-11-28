@@ -169,3 +169,28 @@ section {
 .back-to-top:active {
   transform: scale(0.95);
 }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 12px;
+  padding: 12px 14px;
+}
+
+nav a {
+  font-size: 14px;
+  padding: 6px 8px;
+  text-decoration: none;
+  color: #927266;
+  white-space: nowrap;
+}
+section,
+.card {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease;
+}
+
+section:hover,
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(146, 114, 102, 0.12);
+}
