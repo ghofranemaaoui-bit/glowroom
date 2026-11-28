@@ -108,3 +108,11 @@ footer {
     background: var(--light-pink);
     font-size: 13px;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+section,
+main[id] {
+  scroll-margin-top: 20px;
+}
