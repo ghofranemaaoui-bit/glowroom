@@ -116,3 +116,29 @@ section,
 main[id] {
   scroll-margin-top: 20px;
 }
+:root {
+  --baby-pink: #f8dce8;
+  --blush-pink: #f4e5e7;
+  --soft-beige: #f4ebdd;
+  --warm-brown: #927266;
+  --cream: #fffaf6;
+  --dusty-rose: #d58a9e;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--warm-brown);
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.65;
+}
+
+h1, h2, h3, .brand-logo {
+  font-family: 'Playfair Display', serif;
+  color: var(--warm-brown);
+}
+
+section {
+  background-color: var(--blush-pink);
+  border: 1px solid var(--soft-beige);
+  border-radius: 18px;
+}
