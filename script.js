@@ -14,3 +14,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", function (e) {
+    const targetId = this.getAttribute("href");
+
+    if (targetId === "#") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    const targetEl = document.querySelector(targetId);
+    if (targetEl) {
+      e.preventDefault();
+      const y = targetEl.getBoundingClientRect().top + window.scrollY - 20;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  });
+});
